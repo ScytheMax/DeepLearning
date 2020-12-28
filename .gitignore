@@ -12,3 +12,6 @@
 
 *.pt
 *ubyte
+
+*.vs*
+*.sln
