@@ -26,7 +26,7 @@ def derivMulPar(x: ndarray,
     return dx, dy
 
 def f_sigma(a: ndarray) -> ndarray:
-    return a * a - 3
+    return ms.parabel(a) - 3
 
 x = np.array([1,2,3,4])
 y = np.array([1.5,2.2,3.5,4.5])
