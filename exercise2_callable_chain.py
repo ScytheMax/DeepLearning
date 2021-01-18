@@ -1,5 +1,5 @@
 #[1] pages 7-12
-#[2] folder 01_foundations\Code.ipynb "Basic functions"
+#[2] folder 01_foundations
 
 import numpy as np
 from numpy import ndarray

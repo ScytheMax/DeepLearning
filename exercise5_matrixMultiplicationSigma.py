@@ -1,5 +1,5 @@
 #[1] pages 24-29
-#[2] folder 01_foundations\Code.ipynb "Basic functions"
+#[2] folder 01_foundations
 
 import helper as ms
 import numpy as np
