@@ -26,7 +26,6 @@ def forward_lin_reg(X: ndarray, # m x n
     forward_info['N'] = N
     forward_info['P'] = P
     forward_info['Y'] = Y
-
     
     return L, forward_info
 
