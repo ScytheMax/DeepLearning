@@ -54,3 +54,30 @@ def forward_lin_reg(X: ndarray, # m x n
     forward_info['Y'] = Y
 
     return L, forward_info
+
+#from exercise 8
+def backward_lin_reg(forward_info : Dict[str, ndarray], # X, N, P, Y
+                     weights: Dict[str, ndarray] # W, B
+                     ) -> Dict[str, ndarray]:
+
+    # N = X * W
+    # P = N + B
+    # L = mean((P - Y)^2)
+
+    batch_size = forward_info['X'].shape[0]
+    
+    dLdP = 2 * (forward_info['P'] - forward_info['Y']) / batch_size
+    dPdN = np.ones_like(forward_info['N'])
+    dNdW = np.transpose(forward_info['X'])
+
+    dLdW = np.dot(dNdW, dLdP * dPdN)
+
+    dPdB = 1
+
+    dLdB = (dLdP * dPdB).sum(axis = 0)
+    
+    loss_gradients : Dict[str, ndarray] = {}
+    loss_gradients['W'] = dLdW
+    loss_gradients['B'] = dLdB
+    
+    return loss_gradients
