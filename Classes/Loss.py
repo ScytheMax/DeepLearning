@@ -1,3 +1,6 @@
+from numpy import ndarray
+
+from Classes.Operation import assert_same_shape
 
 class Loss(object):
 

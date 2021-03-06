@@ -1,6 +1,7 @@
 import numpy as np
 from numpy import ndarray
 
+
 def assert_same_shape(array: ndarray,
                       array_grad: ndarray):
     assert array.shape == array_grad.shape, \

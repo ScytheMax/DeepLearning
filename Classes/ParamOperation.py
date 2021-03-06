@@ -1,4 +1,7 @@
-import Operation
+from Classes.Operation import Operation
+import numpy as np
+from numpy import ndarray
+from Classes.Operation import assert_same_shape
 
 class ParamOperation(Operation):
 

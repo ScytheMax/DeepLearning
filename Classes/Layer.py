@@ -1,3 +1,7 @@
+from numpy import ndarray
+from Classes.ParamOperation import ParamOperation
+from Classes.Operation import assert_same_shape
+
 class Layer(object):
 
     def __init__(self,

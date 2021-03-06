@@ -1,4 +1,6 @@
-import ParamOperation
+from Classes.Operation import Operation
+import numpy as np
+from numpy import ndarray
 
 class Sigmoid(Operation):
 

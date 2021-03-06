@@ -1,4 +1,4 @@
-import Optimizer
+from Classes.Optimizer import Optimizer
 
 class SGD(Optimizer):
     '''

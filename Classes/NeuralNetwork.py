@@ -1,3 +1,9 @@
+from typing import List
+from numpy import ndarray
+
+from Classes.Layer import Layer
+from Classes.Loss import Loss
+
 
 class NeuralNetwork(object):
 

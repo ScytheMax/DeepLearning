@@ -1,4 +1,7 @@
-import NeuralNetwork, Optimizer
+from Classes.NeuralNetwork import NeuralNetwork
+from Classes.Optimizer import Optimizer
+import numpy as np
+from numpy import ndarray
 from copy import deepcopy
 from typing import Tuple
 
@@ -31,7 +34,9 @@ class Trainer(object):
 
             yield X_batch, y_batch
 
-    def permute_data(X, y):
+    def permute_data(self, 
+                     X: ndarray, 
+                     y: ndarray):
         perm = np.random.permutation(X.shape[0])
         return X[perm], y[perm]
 

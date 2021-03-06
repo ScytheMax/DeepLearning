@@ -1,5 +1,10 @@
-import Layer
-import Operation
+from Classes.Layer import Layer
+from Classes.Operation import Operation
+from Classes.Sigmoid import Sigmoid
+from Classes.WeightMultiply import WeightMultiply
+from Classes.BiasAdd import BiasAdd
+import numpy as np
+from numpy import ndarray
 
 class Dense(Layer):
 

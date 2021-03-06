@@ -1,4 +1,6 @@
-import Loss
+from Classes.Loss import Loss
+import numpy as np
+from numpy import ndarray
 
 class MeanSquaredError(Loss):
 
